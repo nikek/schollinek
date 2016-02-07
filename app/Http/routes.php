@@ -11,12 +11,19 @@
 |
 */
 
-Route::get('/', function () {
+
+Route::group(['middleware' => ['web']], function () {
+
+  Route::get('/', function () {
     return view('welcome');
+  });
+
+  Route::get('guests', 'GuestsController@index');
+  Route::get('guests/create', 'GuestsController@create');
+  Route::get('guests/{id}', 'GuestsController@show');
 });
 
-Route::get('/guests', 'GuestsController@index');
-Route::get('/guests/{id}', 'GuestsController@show');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

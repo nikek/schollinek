@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Guest;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Request;
 
 class GuestsController extends Controller
 {
@@ -23,5 +22,10 @@ class GuestsController extends Controller
     $guest = Guest::findOrFail($id);
 
     return view('guests.show', compact('guest'));
+  }
+
+  public function create()
+  {
+    return view('guests.create');
   }
 }

@@ -21,6 +21,7 @@ Route::group(['middleware' => ['web']], function () {
   Route::get('guests', 'GuestsController@index');
   Route::get('guests/create', 'GuestsController@create');
   Route::get('guests/{id}', 'GuestsController@show');
+  Route::post('guests', 'GuestsController@store');
 });
 
 

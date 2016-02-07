@@ -28,4 +28,13 @@ class GuestsController extends Controller
   {
     return view('guests.create');
   }
+
+  public function store()
+  {
+    // Store guests
+    Guest::create(Request::all());
+
+    // send them to "Thanks" site with url to edit their company and text: "you can edit until date X"
+    return redirect('guests');
+  }
 }

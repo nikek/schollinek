@@ -1,4 +1,6 @@
-<form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
+<div class="col-xs-6 col-xs-offset-3">
+  <h1></h1>
+  <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
     {!! csrf_field() !!}
     <input type="email" class="hidden" name="email" value="general@schollinek.se">
 
@@ -28,3 +30,4 @@
         </div>
     </div>
 </form>
+</div>

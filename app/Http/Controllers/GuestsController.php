@@ -16,4 +16,12 @@ class GuestsController extends Controller
 
     return view('guests.index', compact('guests'));
   }
+
+
+  public function show($id)
+  {
+    $guest = Guest::findOrFail($id);
+
+    return view('guests.show', compact('guest'));
+  }
 }

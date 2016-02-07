@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/guests', 'GuestsController@index');
+Route::get('/guests/{id}', 'GuestsController@show');
 /*
 |--------------------------------------------------------------------------
 | Application Routes

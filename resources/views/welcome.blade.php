@@ -2,6 +2,6 @@
 
 @section('content')
   <div class="content">
-      <div class="title">H & E</div>
+      <h1 class="title">H & E</h1>
   </div>
 @stop

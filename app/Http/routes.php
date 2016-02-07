@@ -12,17 +12,6 @@
 */
 
 
-Route::group(['middleware' => ['web']], function () {
-
-  Route::get('/', function () {
-    return view('welcome');
-  });
-
-  Route::get('guests', 'GuestsController@index');
-  Route::get('guests/create', 'GuestsController@create');
-  Route::get('guests/{id}', 'GuestsController@show');
-  Route::post('guests', 'GuestsController@store');
-});
 
 
 /*
@@ -36,6 +25,22 @@ Route::group(['middleware' => ['web']], function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/', function () {
+      return view('welcome');
+    });
+
+    Route::get('login', function () { return redirect('/'); });
+    Route::get('register', function(){ return redirect('/'); });
+});
+
+Route::group(['middleware' => ['web', 'auth']], function () {
+    Route::get('rsvp', 'GuestsController@create');
+    Route::post('rsvp', 'GuestsController@store');
+
+    Route::get('all-ze-guests', 'GuestsController@index');
+    Route::get('edit-ze-guest/{id}', 'GuestsController@edit');
 });

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Nope.',
+    'failed' => 'Wrong. Did you check the invite?',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];

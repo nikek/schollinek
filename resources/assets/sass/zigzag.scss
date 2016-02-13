@@ -1,0 +1,30 @@
+
+.zigzag {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index:0;
+    top: -10px;
+    width: 100%;
+    height: 10px;
+  }
+}
+
+@mixin zigzag-coloring($bottom-color) {
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      $bottom-color 33.333%, $bottom-color 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      $bottom-color 33.333%, $bottom-color 66.667%,
+      transparent 66.667%
+    );
+  background-size: 20px 40px;
+}

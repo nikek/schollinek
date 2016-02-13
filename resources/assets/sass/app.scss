@@ -1,5 +1,72 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "colors";
+@import "zigzag";
+@import "ribbon";
 
-$light-blue-color: #1BB6E9;
-$blue-color: #034DA9;
-$dark-blue: #0E3285;
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a, button, input, select, textarea, label, summary { touch-action: manipulation }
+h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; text-transform: uppercase; }
+
+
+// HEADER
+.header {
+  background-color: $black;
+  width: 100%;
+  height: 115px;
+}
+
+.ribbon-wrap {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  margin: 10px auto;
+}
+
+
+// MAIN
+.main {
+  flex: 1;
+  display: inline-block;
+  background-color: $lighter-gray;
+
+  // zigzag affects upwards
+  &.zigzag::before {
+    @include zigzag-coloring($lighter-gray);
+  }
+}
+
+.konserthuset-wrap img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.footer {
+  height: 50px;
+  line-height: 50px;
+  background-color: $black;
+  color: $lighter-gray;
+  text-align: center;
+  // zigzag affects upwards
+  &.zigzag::before {
+    @include zigzag-coloring($black);
+  }
+}

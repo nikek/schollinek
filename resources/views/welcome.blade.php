@@ -1,27 +1,30 @@
 @extends('app')
 
 @section('content')
-    <div class="container1">
+    <header class="header">
       <div class="ribbon-wrap">
         <h1 class="title ribbon">
           <i></i>
           <i></i>
           <i></i>
           <i></i>
-          <em>EMMA</em>
-          <span class="ampersand">&</span>
-          <em>HENRIK</em>
+          <em class="title-name title-name-left">EMMA</em>
+          <span class="title-ampersand">&</span>
+          <em class="title-name title-name-right">HENRIK</em>
         </h1>
       </div>
-    </div>
-    <div class="container2 zigzag">
+    </header>
+    <div class="main zigzag">
+      <div class="konserthuset-wrap">
+        <img src="images/konserthuset.svg" alt="Siluett av konserthuset i Gävle.">
+      </div>
       @if (Auth::guest())
           @include('onepass')
       @else
           @include('info')
       @endif
     </div>
-    <div class="container3 zigzag page-footer">
+    <footer class="footer zigzag">
       <h6>#SCHOLLINEK</h6>
-    </div>
+    </footer>
 @stop

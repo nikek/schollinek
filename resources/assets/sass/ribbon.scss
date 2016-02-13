@@ -16,6 +16,10 @@
   top: 50%;
 }
 .title-name-right::after { left: auto; right: -75px;}
+.title {
+  font-size: 50px;
+  margin: 10px auto;
+}
 
 .title-ampersand {
   font-family: 'Alice', serif;
@@ -25,6 +29,25 @@
   transform: translate(-42px, -16px);
   font-weight: 100;
   color: #0E3285;
+}
+
+@media ($mobile) {
+  h1 { line-height: 0.6 }
+
+  .title-name {
+    font-size: 35px;
+  }
+
+  .title-name-left::before, .title-name-right::after {
+    width: 35px;
+    left: -50px;
+  }
+  .title-name-right::after { left: auto; right: -50px;}
+
+  .title-ampersand {
+    font-size: 70px;
+    transform: translate(-34px, 3px);
+  }
 }
 
 .ribbon {
@@ -42,6 +65,7 @@
   -ms-animation: main 250ms;
   animation: main 250ms;
 }
+
 
 
 .ribbon i {
@@ -131,8 +155,20 @@
 
 .page-footer { color: white; }
 .page-footer h6 { display: inline-block; position: relative; top: 5px;}
-/* animations */
 
+
+@media ($mobile) {
+  .ribbon {
+    height: 45px;
+    padding: 0 15px;
+  }
+  .ribbon i:nth-child(3), .ribbon i:nth-child(4) {
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+  }
+}
+
+/* animations */
 @-webkit-keyframes main {
   0% { -webkit-transform: scaleX(0); }
   100% { -webkit-transform: scaleX(1); }

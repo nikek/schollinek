@@ -1,4 +1,5 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$mobile: 'max-width: 700px';
 @import "colors";
 @import "zigzag";
 @import "ribbon";
@@ -32,11 +33,11 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; text-transform: uppe
   text-align: center;
 }
 
-.title {
-  font-size: 50px;
-  margin: 10px auto;
+@media ($mobile) {
+  .header {
+    height: 90px;
+  }
 }
-
 
 // MAIN
 .main {

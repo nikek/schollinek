@@ -42,10 +42,15 @@ class GuestsController extends Controller
 
   public function store()
   {
-    // Store guests
-    Guest::create(Request::all());
+    $guest = Request::all();
 
-    // send them to "Thanks" site with url to edit their company and text: "you can edit until date X"
-    return redirect('guests');
+
+    // Store guests
+    // Guest::create($guest);
+
+
+    // Send them to "Thanks" site with link to add a new guests, mailing henrik
+    return view('thanks')->with('guest', $guest);
   }
+
 }

@@ -1,65 +1,107 @@
 @extends('app')
 
 @section('content')
-<div>
-  <h1>RSVP</h1>
+<div class="container">
+  {!! Form::open(['url' => 'rsvp', 'class' => 'form-horizontal']) !!}
 
-  {!! Form::open(['url' => 'guests']) !!}
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-9">
+        <h1>RSVP</h1>
+      </div>
+    </div>
 
-  <div class="form-group">
-    {!! Form::label('name', 'Name') !!}
-    {!! Form::text('name', null, ['class' => 'form-controller']) !!}
-  </div>
+    <div class="form-group">
+      <label for="name" class="col-sm-3 control-label">Name</label>
+      <div class="col-sm-7">
+        {!! Form::text('name', null, ['class' => 'form-control']) !!}
+      </div>
+    </div>
 
-  <h2>Contact</h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="email" class="col-sm-6 control-label">Email</label>
+          <div class="col-sm-6">
+            {!! Form::email('email', null, ['class' => 'form-control']) !!}
+          </div>
+        </div>
+      </div>
 
-  <div class="form-group">
-    {!! Form::label('email', 'Email') !!}
-    {!! Form::email('email', null, ['class' => 'form-controller']) !!}
-  </div>
-
-  <div class="form-group">
-    {!! Form::label('phone', 'Phone number') !!}
-    {!! Form::text('phone', null, ['class' => 'form-controller']) !!}
-  </div>
-
-  <h2>Feast</h2>
-  <div class="form-group">
-    {!! Form::label('alcohol', 'I wish to consume alcoholic beverages') !!}
-    {!! Form::checkbox('alcohol') !!}
-  </div>
-
-  <div class="form-group">
-    {!! Form::select('food', [
-      'vegetarian' => 'No dead animals, but I love cheese',
-      'vegan' => 'No traces of animals.. Go plants!',
-      'meat' => 'Dead animals please',
-      'other' => 'Allergy/Other (you\'ll get a new field to fill in)',
-    ],
-    null,
-    ['placeholder' => 'The stuff I prefer to eat', 'class' => 'form-controller', 'id' => 'food-form']) !!}
-    {!! Form::textarea('food_extra', null, ['class' => 'form-controller hidden', 'id' => 'food-extra', 'placeholder' => 'Details regarding allergies or other food preferences']) !!}
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="name" class="col-sm-2 control-label">Phone</label>
+          <div class="col-sm-6">
+            {!! Form::text('phone', null, ['class' => 'form-control']) !!}
+          </div>
+        </div>
+      </div>
   </div>
 
   <div class="form-group">
-    {!! Form::label('song', 'Song that will make you dance!') !!}
-    {!! Form::text('song', null, ['class' => 'form-controller']) !!}
+    <label for="food" class="col-sm-3 control-label">Food</label>
+    <div class="col-sm-7">
+      {!! Form::select('food', [
+        'vegetarian' => 'No dead animals, but I love cheese',
+        'vegan' => 'No traces of animals.. Go plants!',
+        'meat' => 'Dead animals please',
+        'other' => 'Allergy/Other (you\'ll get a new field to fill in)',
+      ],
+      null,
+      ['placeholder' => 'Choose your preference', 'class' => 'form-control', 'id' => 'food-form']) !!}
+      {!! Form::textarea('food_extra', null, ['class' => 'form-control hidden', 'id' => 'food-extra', 'placeholder' => 'Details regarding allergies or other food preferences']) !!}
+    </div>
   </div>
 
   <div class="form-group">
-    {!! Form::label('friday', 'Joining the Friday dinner') !!}
-    {!! Form::checkbox('friday') !!}
+    <div class="col-sm-offset-3 col-sm-9">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="alcohol"> I wish to consume alcoholic beverages
+        </label>
+      </div>
+    </div>
   </div>
 
   <div class="form-group">
-    {!! Form::label('sunday', 'Stay for the Sunday brunch') !!}
-    {!! Form::checkbox('sunday') !!}
+    <div class="col-sm-offset-3 col-sm-9">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="1" name="friday" id="friday"> Joining the Friday dinner
+        </label>
+      </div>
+    </div>
   </div>
 
-  {!! Form::submit('Go!') !!}
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="1" name="sunday" id="sunday"> Stay for the Sunday brunch
+        </label>
+      </div>
+    </div>
+  </div>
 
+  <div class="form-group">
+    <label for="song" class="col-sm-3 control-label">Favorite Song</label>
+    <div class="col-sm-7">
+      {!! Form::text('song', null, ['class' => 'form-control', 'placeholder' => 'Song that will make you dance!']) !!}
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-3">
+      {!! Form::submit('Respond', ['class' => 'btn btn-primary']) !!}
+    </div>
+  </div>
+  <div class="form-group">
+    <p class="help-block col-sm-9 col-sm-offset-3">
+      You can only RSVP one person at a time.
+    </p>
+  </div>
 
   {!! Form::close() !!}
+</div>
 
   <script type="text/javascript">
     var foodField = document.querySelector('#food-form');
@@ -75,5 +117,4 @@
     })
   </script>
 
-</div>
 @stop

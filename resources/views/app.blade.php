@@ -26,6 +26,12 @@
           <em class="title-name title-name-right">HENRIK</em>
         </h1>
       </div>
+      @if (!Auth::guest())
+        <nav>
+          <a href="/" class="btn btn-link">Info</a>
+          <a href="/rsvp" class="btn btn-link">RSVP</a>
+        </nav>
+      @endif
     </header>
     <div class="main zigzag">
       <div class="konserthuset-wrap">

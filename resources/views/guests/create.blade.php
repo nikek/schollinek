@@ -31,7 +31,7 @@
         <div class="form-group">
           <label for="name" class="col-sm-2 control-label">Phone</label>
           <div class="col-sm-6">
-            {!! Form::text('phone', null, ['class' => 'form-control']) !!}
+            {!! Form::input('tel', 'phone', null, ['class' => 'form-control']) !!}
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
     <div class="col-sm-offset-3 col-sm-9">
       <div class="checkbox">
         <label>
-          <input type="checkbox" name="alcohol"> I wish to consume alcoholic beverages
+          <input type="checkbox" value="1" name="alcohol" id="alcohol"> I wish to consume alcoholic beverages
         </label>
       </div>
     </div>

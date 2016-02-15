@@ -132,7 +132,7 @@
 
 
 .ribbon-blue {
-  background: #034DA9;
+  background: $purple;
   color: white;
   height: 40px;
 }
@@ -146,12 +146,18 @@
   border-width: 15px; }
 .ribbon-blue i:nth-child(2) { left: auto; right: -15px; }
 .ribbon-blue i:nth-child(3), .ribbon-blue i:nth-child(4) {
+  border-top-color: $light-purple;
+  border-right-color: $light-purple;
+  border-bottom-color: $light-purple;
   bottom: -15px;
   left: -35px;
   border-width: 20px;
   border-right-width: 30px;
 }
-.ribbon-blue i:nth-child(4) { left: auto; right: -35px; border-width: 20px; border-left-width: 30px;}
+.ribbon-blue i:nth-child(4) {
+  border-left-color: $light-purple;
+  border-right-color: transparent;
+  left: auto; right: -35px; border-width: 20px; border-left-width: 30px;}
 
 .page-footer { color: white; }
 .page-footer h6 { display: inline-block; position: relative; top: 5px;}

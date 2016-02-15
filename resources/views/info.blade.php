@@ -49,7 +49,7 @@
       <em>Getting there</em>
     </h2>
   </div>
-  <div class="maps-wrap">
+  <div class="maps-wrap google-maps">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1954.2208259105873!2d17.13082481624654!3d60.67243430965277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4660c642ec0a8993%3A0x9a3ce2eda0b5e013!2sG%C3%A4vle+Konserthus+%26+Symfoniorkester!5e0!3m2!1sen!2sse!4v1455393864047" width="440" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
   <p>

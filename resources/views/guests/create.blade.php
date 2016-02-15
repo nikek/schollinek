@@ -90,10 +90,19 @@
   </div>
 
   <div class="form-group">
-    <div class="col-sm-offset-3 col-sm-3">
-      {!! Form::submit('Respond', ['class' => 'btn btn-primary']) !!}
+    <div class="form-inline col-sm-7 col-sm-offset-3">
+
+        {!! Form::submit('Respond', ['class' => 'btn btn-primary', 'id' => 'submit', 'disabled' => 'true']) !!}
+
+        <div class="checkbox lineheight-fix">
+          <label>
+            <input type="checkbox" value="1" name="check" id="check"> Yes, I've double checked my response!
+          </label>
+        </div>
+
     </div>
   </div>
+
   <div class="form-group">
     <p class="help-block col-sm-9 col-sm-offset-3">
       You can only RSVP one person at a time.
@@ -114,6 +123,13 @@
       else {
         foodExtraField.classList.add('hidden');
       }
+    })
+
+    var check = document.querySelector('#check');
+    var submit = document.querySelector('#submit');
+    check.addEventListener('change', function(e) {
+      submit.disabled = !e.target.checked;
+      console.log(submit);
     })
   </script>
 

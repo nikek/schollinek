@@ -46,7 +46,7 @@ class GuestsController extends Controller
 
 
     // Store guests
-    // Guest::create($guest);
+    Guest::create($guest);
 
 
     // Send them to "Thanks" site with link to add a new guests, mailing henrik

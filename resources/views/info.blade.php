@@ -22,8 +22,8 @@
     </h2>
   </div>
   <p>
-    Let us know if you can come by filling out the form. Don’t forget to mention if you have any allergies and/or other food preferences.
-    <a href="/rsvp">DO IT NOW</a>
+    Let us know if you can come by filling out the form. Don’t forget to mention if you have any allergies and/or other food preferences. <br>
+    <a href="/rsvp">DO IT HERE</a> <strong>before March 31</strong>.
   </p>
 
   <div class="ribbon-wrap">

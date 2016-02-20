@@ -41,9 +41,10 @@
     <label for="food" class="col-sm-3 control-label">Food</label>
     <div class="col-sm-7">
       {!! Form::select('food', [
-        'vegetarian' => 'No dead animals, but I love cheese',
-        'vegan' => 'No traces of animals.. Go plants!',
-        'meat' => 'Dead animals please',
+        'vegan' => 'Vegan',
+        'vegetarian' => 'Vegetarian',
+        'pescetarian' => 'Pescetarian',
+        'meat' => 'Meat',
         'other' => 'Allergy/Other (you\'ll get a new field to fill in)',
       ],
       null,

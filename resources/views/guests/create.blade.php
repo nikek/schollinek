@@ -77,7 +77,7 @@
     <div class="col-sm-offset-3 col-sm-9">
       <div class="checkbox">
         <label>
-          <input type="checkbox" value="1" name="sunday" id="sunday"> Stay for the Sunday brunch
+          <input type="checkbox" value="1" name="sunday" id="sunday"> Stay for the Sunday breakfast
         </label>
       </div>
     </div>

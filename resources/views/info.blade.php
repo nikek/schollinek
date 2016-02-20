@@ -36,8 +36,8 @@
     </h2>
   </div>
   <p>
-    For out-of-towners we suggest Elite Grand Hotell where you will get a discounted rate using booking code ”schollinek”.
-    Single rooms are 890 SEK, double are 1090 SEK. Cancellations will be accepted until the day of check-in. (You might find even cheaper rates online at elite.se, however they’ll be non-refundable).
+    For out-of-towners we suggest Elite Grand Hotell where you will get a discounted rate using booking code ”SchollinEk”. To use the discount you send an email to <a href="mailto:info.gavle@elite.se">info.gavle@elite.se</a> or call the hotel at <a href="tel:+46264007300">026&nbsp;-&nbsp;400&nbsp;73&nbsp;00</a>.
+    Single rooms are 890 SEK, double are 1090 SEK. Cancellations will be accepted until the day of check-in. (You might find even cheaper rates online at <a href="http://elite.se" target="_blank">elite.se</a>, however they’ll be non-refundable).
   </p>
 
   <div class="ribbon-wrap">
@@ -119,6 +119,19 @@
   </div>
   <p>
     We will be hosting a dinner on Friday night (May 6th) for those arriving early (or live in Gävle). Venue is yet to be determined. Let us know when you RSVP if you would want to join us on Friday night as well.
+  </p>
+
+  <div class="ribbon-wrap">
+    <h2 class="ribbon ribbon-blue">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <em>Sunday morning</em>
+    </h2>
+  </div>
+  <p>
+    On Sunday morning around 9:00 (7:30&nbsp;-&nbsp;12:00) we'll be having breakfast at Elite Grand Hotell. The breakfast is included for hotel guests. For everyone else the price is 149 kr.
   </p>
 
   <div class="ribbon-wrap">

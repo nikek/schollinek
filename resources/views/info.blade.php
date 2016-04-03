@@ -18,26 +18,11 @@
       <i></i>
       <i></i>
       <i></i>
-      <em>RSVP</em>
+      <em>Time</em>
     </h2>
   </div>
   <p>
-    Let us know if you can come by filling out the form. Don’t forget to mention if you have any allergies and/or other food preferences. <br>
-    <a href="/rsvp">DO IT HERE</a> <strong>before March 31</strong>.
-  </p>
-
-  <div class="ribbon-wrap">
-    <h2 class="ribbon ribbon-blue">
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <em>Accomodation</em>
-    </h2>
-  </div>
-  <p>
-    For out-of-towners we suggest Elite Grand Hotell where you will get a discounted rate using booking code ”SchollinEk”. To use the discount you send an email to <a href="mailto:info.gavle@elite.se">info.gavle@elite.se</a> or call the hotel at <a href="tel:+46264007300">026&nbsp;-&nbsp;400&nbsp;73&nbsp;00</a>.
-    Single rooms are 890 SEK, double are 1090 SEK. Cancellations will be accepted until the day of check-in. (You might find even cheaper rates online at <a href="http://elite.se" target="_blank">elite.se</a>, however they’ll be non-refundable).
+    We’ll open the doors on Saturday May 7 at 17.00 CET for pre-dinner mingle. Dinner is at 18.00.
   </p>
 
   <div class="ribbon-wrap">
@@ -62,11 +47,12 @@
       <i></i>
       <i></i>
       <i></i>
-      <em>Time</em>
+      <em>Accomodation</em>
     </h2>
   </div>
   <p>
-    We’ll open the doors on Saturday at 17.00 CET for pre-dinner mingle. Dinner is at 18.00.
+    For out-of-towners we suggest Elite Grand Hotell where you will get a discounted rate using booking code ”SchollinEk”. To use the discount you send an email to <a href="mailto:info.gavle@elite.se">info.gavle@elite.se</a> or call the hotel at <a href="tel:+46264007300">026&nbsp;-&nbsp;400&nbsp;73&nbsp;00</a>.
+    Single rooms are 890 SEK, double are 1090 SEK. Cancellations will be accepted until the day of check-in. (You might find even cheaper rates online at <a href="http://elite.se" target="_blank">elite.se</a>, however they’ll be non-refundable).
   </p>
 
   <div class="ribbon-wrap">
